@@ -17,6 +17,22 @@
     <link href="activeimage.css" rel="stylesheet">
   </head>
   <body class="disable-select">
+    <script type="text/javascript">
+      (function(l) {
+        if (l.protocol === 'http:' ) {
+          window.location.replace("https://www.neolation.com");
+	        return
+      	}
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand" href="#">Neolation</a>
