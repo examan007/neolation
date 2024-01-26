@@ -1,0 +1,7 @@
+.marketing {
+    display: flex;
+}
+
+.btn-secondary {
+    transform: translateX(-100px);
+}
