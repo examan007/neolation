@@ -46,3 +46,7 @@
 .business-card p {
   margin: 10px 0;
 }
+
+.business-card:hover {
+  color: #ff0000; /* Color to change to on hover */
+}

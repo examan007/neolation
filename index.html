@@ -34,6 +34,26 @@
           );
         }
       }(window.location))
+      function clickOnBusinessCard () {
+        console.log("click card")
+      }
+      function initializeCards() {
+        document.querySelectorAll(".business-card").
+          forEach((element) => {
+            element.addEventListener("click", function() {
+              console.log("Business card clicked! " + element.innerHTML);
+              function getNewHref() {
+                const anchor = element.querySelectorAll("a")[0]
+                if (typeof(anchor) !== 'undefined') {
+                  return anchor.getAttribute("href")
+                }
+                return "https://demo.neolation.com/index.html"
+              }
+              window.location.href = getNewHref();
+            })
+          })
+      }
+
     </script>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -136,15 +156,14 @@
     <div class="neomarketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="neowebsite business-card">
-        <div class="">
-          <img id="first-customer_x" class="rounded-circle" src="https://neolation.com/newneoz.png" alt="Generic placeholder image" width="215">
-        </div><!-- /.col-lg-4 -->
-        <div class="">
-          <h2>Neolation demo</h2>
-          <p>•	Corporate web site as SPA that integrates integrates various cross domain services.</p>
-          <p><a class="btn btn-secondary" href="http://demo.neolation.com" role="button">Please feel free to try. &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        <div class="neowebsite business-card">
+          <div class="">
+            <img id="first-customer_x" class="rounded-circle" src="https://neolation.com/newneoz.png" alt="Generic placeholder image" width="215">
+          </div><!-- /.col-lg-4 -->
+          <div class="">
+            <h2>Neolation demo</h2>
+            <p>•	Corporate web site as SPA that integrates integrates various cross domain services.</p>
+          </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
       <div style="display: none;" class="neowebsite business-card">
       </div><!-- /.row -->
@@ -155,7 +174,6 @@
         <div class="">
           <h2>iLaS</h2>
           <p>•	Mobile computer application that schedules service bookings is designed and prototyped as SPA.</p>
-          <p><a class="btn btn-secondary" href="http://styleunow.com" role="button">Please feel free to try. &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div><!-- /.container -->
@@ -177,5 +195,8 @@
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="activeimage.js"></script>
+    <script>
+      initializeCards()
+    </script>
   </body>
 </html>
