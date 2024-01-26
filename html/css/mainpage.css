@@ -1,7 +1,48 @@
-.marketing {
+.neomarketing {
     display: flex;
+    flex-wrap: wrap
 }
 
 .btn-secondary {
-    transform: translateX(-100px);
+}
+
+.neowebsite {
+    margin-left: 50px;
+    margin-bottom: 25px;
+    display: flex;
+    height: 250px;
+    width: 500px;
+}
+
+.shaded-border {
+  position: relative;
+  padding: 10px; /* Adjust padding as needed */
+  background: linear-gradient(to bottom right, #ccc, #fff); /* Gradient for the background color */
+}
+
+.shaded-border::before {
+  content: '';
+  position: absolute;
+  top: -5px; /* Adjust the offset based on your design */
+  left: -5px; /* Adjust the offset based on your design */
+  right: -5px; /* Adjust the offset based on your design */
+  bottom: -5px; /* Adjust the offset based on your design */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+  z-index: -1;
+}
+
+.business-card {
+  background: linear-gradient(to bottom right, #e6e6e6, #f9f9f9); /* Gradient for the background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle border effect */
+  border-radius: 10px; /* Rounded corners for a card-like appearance */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.business-card h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.business-card p {
+  margin: 10px 0;
 }
