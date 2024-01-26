@@ -6,12 +6,16 @@
 .btn-secondary {
 }
 
+#myCarousel {
+  width: 100%;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
 .neowebsite {
+    max-width: 450px;
     margin-left: 50px;
     margin-bottom: 25px;
-    display: flex;
-    height: 250px;
-    width: 500px;
 }
 
 .shaded-border {
@@ -36,6 +40,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle border effect */
   border-radius: 10px; /* Rounded corners for a card-like appearance */
   padding: 20px; /* Adjust padding as needed */
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .business-card h2 {
@@ -49,4 +55,8 @@
 
 .business-card:hover {
   color: #ff0000; /* Color to change to on hover */
+}
+
+.rounded-circle {
+    height: 200px;
 }
