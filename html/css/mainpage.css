@@ -55,7 +55,8 @@
 }
 
 .business-card:hover {
-  color: #ff0000; /* Color to change to on hover */
+  color: #3f7c3d; /* Color to change to on hover */
+  opacity: 0.75;
 }
 
 .rounded-circle {
