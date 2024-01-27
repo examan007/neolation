@@ -57,6 +57,7 @@
 .business-card:hover {
   color: #3f7c3d; /* Color to change to on hover */
   opacity: 0.75;
+  cursor: pointer;
 }
 
 .rounded-circle {
