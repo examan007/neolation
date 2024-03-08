@@ -1,3 +1,13 @@
+
+body {
+    padding: 0 !important;
+}
+
+.whole-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .neomarketing {
     display: flex;
     flex-wrap: wrap

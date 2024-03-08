@@ -17,6 +17,10 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link href="activeimage.css" rel="stylesheet">
+
+    <script src="https://examan007.github.io/portfolio/js/portfolio.js"></script>
+    <script src="html/js/plugin.js"></script>
+
   </head>
   <body class="disable-select">
     <script type="text/javascript">
@@ -65,7 +69,7 @@
           })
       }
      </script>
-
+    <div class="whole-page">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <a class="navbar-brand reloadParent" href="#">Neolation</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -204,8 +208,10 @@
         <footer>
           <p class="float-right" style="display:none"><a href="#">Back to top</a></p>
           <p class="" style="text-align: center;">
-            &copy; 2024 Neolation.com Corp. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            &copy; 2024 Neolation.com Corp.</p>
         </footer>
+    </div>
+
     </div>
 
     <!-- Bootstrap core JavaScript
@@ -220,6 +226,7 @@
     <script>
       initializeCards()
       initializeAnchors()
+      Plugin().loadServer(".whole-page")
     </script>
   </body>
 </html>
