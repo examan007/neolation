@@ -41,7 +41,7 @@ var Plugin = function () {
                 if (index < objectlist.length) {
                     const obj = objectlist[index]
                     const start = 0
-                    const height = 500
+                    const height = viewheight
                     const padding = viewheight - height - start * scale
                     const name = classname
                     const options = {
